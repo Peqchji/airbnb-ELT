@@ -1,1 +1,1 @@
-SELECT * FROM AIRBNB_ELT.SOURCE.HOSTS
+SELECT * FROM {{ source('source', 'hosts') }}
