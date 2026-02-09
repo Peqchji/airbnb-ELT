@@ -1,0 +1,4 @@
+models:
+  - name: staging
+    config:
+      materialized: view
