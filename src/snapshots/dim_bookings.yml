@@ -1,0 +1,10 @@
+snapshots:
+  - name: dim_bookings
+    relation: ref('ephemeral_bookings')
+    config:
+      schema: mart
+      database: AIRBNB_ELT
+      unique_key: BOOKING_ID
+      strategy: timestamp
+      updated_at: CREATED_AT
+      dbt_valid_to_current: NULL
